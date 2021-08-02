@@ -1,0 +1,187 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.groupRow{
+  display:flex;
+  flex-direction: row;
+}
+
+.item-row{
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  width: 100%;
+  padding: 10px;
+}
+
+form label {
+  font-weight: bold;
+  display:inline-flexbox;
+  width: 270px;
+
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+@media all and (min-width: 600px) {
+  section,
+  h1 {
+    padding: 0 10%;
+  }
+  .groupRow{
+    display: block;
+    width: 100%;
+  }
+  .group {
+    flex-direction: row;
+  }
+  .groupGrid{
+    display : flex;
+    flex-direction : row ;
+    justify-content : space-evenly;
+    flex-flow : wrap;
+  }
+  .groupColumn{
+    flex:1;
+    padding: 0;
+    align-content: stretch;
+    width: 100%;
+  }
+  .item{
+    flex: 1;
+  }
+  .desktop-double{
+    flex:2;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30 30px;
+  }
+
+  header h1 {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 8px;
+  }
+  
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+  
+
+}
+
