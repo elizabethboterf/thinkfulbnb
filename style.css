@@ -88,10 +88,12 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+  padding: 0px;
 }
 
 header nav ul li {
   list-style-type: none;
+  padding: 0px;
 }
 
 header nav ul li a {
@@ -147,6 +149,7 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+/* I kept this original media query to meet the requirements listed, but I don't think it takes affect until after 750px */
 @media all and (min-width: 480px) {
   section,
   h1 {
@@ -200,15 +203,14 @@ footer p {
   }
 
 }
+/*changes the header, the stay form, the about section, and host section to a vertical format because the horizontal layout doesn't fit/look good on medium screens*/
 
-@media screen and (max-width: 800px) {
-  .group {
+@media screen and (min-width:480px) and (max-width: 750px){
+  header.group, form.group,#about div.group, #host.group{
     display: flex;
     flex-direction: column;
   }
-  .logo{
-    font-size: 40px;
-  }
+
   .groupRow{
     display:flex;
     flex-direction: row;
@@ -218,6 +220,7 @@ footer p {
     justify-content: space-between;
     width: 100%;
   }
-
 }
+
+
 
